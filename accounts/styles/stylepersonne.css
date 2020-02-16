@@ -1,0 +1,140 @@
+@import url("style.css");
+
+#content{
+	height: 100%;
+}
+#fiche input[type='submit']{
+	background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+	margin: 20px auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+#center{
+	float: left;
+    width: 80%;
+}
+#fiche #add{
+    background-image: url(../images/add.png);
+}
+
+#fiche #delete{
+    background-image: url(../images/delete.png);
+}
+#left{
+	font-family: caviar;
+    float: left;
+    height: 100%;
+    width: 19%;
+}
+#left ul{
+	list-style: none;
+}
+#left a{
+	text-decoration: none;
+	color: black;
+}
+#left ul li{
+	margin-bottom: 5px;
+}
+#left a:hover{
+	text-decoration: underline;
+	color: #0080ff;
+}
+form{
+    width: 60%;
+}
+#center>table{
+	width: 60%
+}
+#stars_table{
+	background-color: rgb(255, 255, 255, 0.75);
+	border-radius: 0 0 5px 5px;
+	border: 1px solid black;
+	border-top: none;
+}
+#stars_table td{
+    padding: 10px;
+    padding-left: 20%;
+    font-family: caviar;
+}
+.tableHole{
+	margin-top: 10px;
+    width: 100%;
+	border: 1px solid black;
+	border-radius: 5px 5px 0 0;
+	background-color: rgb(255, 255, 255, 0.75);
+	border-bottom: none;
+}
+
+.listed{
+	width: 100%;
+}
+
+.listed img{
+	margin: 10px auto;
+    display: block;
+}
+
+.listed td{
+	font-family: gravity;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.listed .mail{
+	font-style: italic;
+	font-size: 0.9em;
+}
+.rating-stars ul{
+	list-style-type: none;
+	padding: 0;
+	box-sizing: border-box;
+	  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+
+.rating-stars ul > li.star{
+	display: inline-block;
+	box-sizing: border-box;
+}
+.rating-stars ul > li.star.selected > i.fa {
+    color: rgb(255, 202, 0);
+}
+
+.rating-stars ul > li.star > i.fa {
+    font-size: 2.5em;
+    color: #ccc;
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:rgb(255, 250, 0);
+}
+
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.fa-star:before {
+    content: "\f005";
+}

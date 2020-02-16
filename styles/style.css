@@ -1,0 +1,137 @@
+@font-face{
+	src: url('../fonts/BebasNeue-Regular.ttf');
+	font-family: bebas;
+}
+
+body, html{
+	margin: 0;
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	background: url('../images/signinbg.jpeg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+header{
+	padding: 10px;
+	background-color: rgb(51, 51, 51, 0.9);
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#content{
+	flex: 1;
+	text-align: center;
+}
+#content a{
+	font-style: italic;
+	font-family: gravity;
+	font-size: 0.5em;
+	color: black;
+	text-decoration: none;
+	margin-right: 10px;
+}
+#content a:hover{
+	text-decoration: underline;
+	color: #003399;
+}
+#content #parent{
+	text-align: right;
+}
+
+.title{
+    float: left;
+    display: initial;
+	margin: 5px;
+}
+
+.buttons{
+	margin-top: 0.5%;
+	display: block;
+    cursor: pointer;
+    border: 0;
+    height: 80%;
+    background-color: transparent;
+	color: transparent;
+	margin-right: 20px;
+	width: auto;
+}
+
+img{
+	height: 100%;
+}
+
+h1{
+	font-family: bebas;
+	font-size: 3em;
+	margin: 20px 0 8px 0;
+	text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
+}
+
+form{
+    display: inline-block;
+    text-align: left;
+	background-color: rgb(210, 210, 210, 0.6);
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+td{
+	font-family: bebas;
+	font-size: 1.3em;
+	color: #333333;
+}
+
+input[type='password'], input[type='text']{
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 5px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+	padding: 5px 20px;
+	margin-left: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #808080;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #808080;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #808080;
+}
+
+input[type='submit']{
+	border-radius: 20px;
+	padding: 7px 12px;
+	color: white;
+	font-family: bebas;
+	font-size: 1em;
+	border: 1px solid #ac7339;
+	background-color: #ac7339;
+	text-shadow: -1px 0 #ac7339, 0 1px #ac7339,
+      1px 0 #ac7339, 0 -1px #ac7339;
+}
+
+.submit_button{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.submit_button input[type='submit']:hover{
+	border: 1px solid black;
+	cursor: pointer;
+	text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+}

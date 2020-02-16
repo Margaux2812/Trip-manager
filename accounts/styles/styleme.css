@@ -1,0 +1,188 @@
+@import url("style.css");
+
+table{
+    min-width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+	background-color: rgb(255, 255, 255, 0.7);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+table td{
+	text-align: center;
+	padding: 10px;
+}
+#left{
+	width: 19%;
+	height: 100%;
+    display: inline-block;
+    float: left;
+	background-color: rgb(255, 255, 255, 0.7);
+}
+
+#left table{
+    width: 100%;
+    border-collapse: collapse;
+	background-color: transparent;
+}
+
+#left table td{
+	padding: 10px 0 10px 40%;
+    text-align: left;
+}
+
+#left table th{
+	text-align: left;
+	font-family: gravity;
+    font-size: 1.5em;
+    padding: 10px;
+    padding-left: 20%;
+}
+#left table a{
+	font-family: caviar;
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+#left table a:hover{
+    text-decoration: underline;
+    color: #0080ff;
+}
+
+.text-center{
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.rating-stars ul{
+	list-style-type: none;
+	padding: 0;
+	box-sizing: border-box;
+	  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+
+.rating-stars ul > li.star{
+	display: inline-block;
+	box-sizing: border-box;
+}
+.rating-stars ul > li.star.selected > i.fa {
+    color: rgb(255, 202, 0);
+}
+
+.rating-stars ul > li.star > i.fa {
+    font-size: 2em;
+    color: #ccc;
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:rgb(255, 250, 0);
+}
+
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.fa-star:before {
+    content: "\f005";
+}
+
+#center{
+	display: inline-block;
+	width: 50%;
+}
+#center table{
+	font-family: caviar;
+}
+#change_pic{
+    background-color: rgba(202, 202, 202, 0.7);
+    position: absolute;
+    z-index: 10;
+    height: -webkit-calc(100% - 80px);
+    width: 100%;
+	height:    -moz-calc(100% - 80px);
+    height:         calc(100% - 80px);
+	text-align: center;
+}
+
+#change_pic form{
+    display: inline-block;
+    margin-top: 10%;
+}
+
+#change_pic input[type=file]{
+	margin: auto;
+    display: block;
+}
+#change_pic input[type=submit]{
+	margin: 20px auto;
+    display: block;
+}
+
+#change_pic img{
+	max-height: 150px;
+    display: block;
+    max-width: 150px;
+    margin: 20px auto;
+}
+#sub{
+	font-family: gravity;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 3px 13px;
+    background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+}
+#profile_picture img{
+    display: block;
+    margin: 10px auto;
+	max-width: 150px;
+    max-height: 150px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+#right{
+	float: right;
+    width: 29%;
+    padding: 0 10px;
+	display: inline-block;
+}
+
+#right h2{
+    text-align: center;
+    font-family: gravity;
+}
+
+#right ul{
+	list-style-type: none;
+    padding: 0;
+}
+
+#right li{
+	text-align: left;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+}
+
+#right li a{
+	margin: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+#right li a:hover{
+	text-decoration: underline;
+	color: #2952a3;
+}

@@ -1,0 +1,102 @@
+@import url("style.css");
+
+#bandeau{
+	width: 80%;
+	margin: auto;
+}
+
+#bandeau td:first-child{
+	text-align: right;
+}
+#bandeau td:nth-child(2){
+	text-align: center;
+}
+#bandeau td:nth-child(3){
+	text-align: left;
+}
+
+form{
+	display: inline-block;
+}
+
+#bandeau p{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#bandeau figure{
+	display: inline-block;
+}
+
+#bandeau input[type="submit"], #square, #list{
+	background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.65em;
+    height: 100%;
+    cursor: pointer;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#searchButton{
+    background-image: url(../images/search.png);
+}
+
+#validButton{
+	background-image: url(../images/valid.png);
+}
+#Square{
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/square_display.png);
+}
+#List{
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/list_display.png);
+}
+
+/*-----------------------------------------------------Content-*/
+
+h2{
+	font-family: bebas;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
+	background-color: rgb(255, 255, 255, 0.5);
+	padding: 10px;
+}
+h2 img{
+	vertical-align: middle;
+}
+
+
+#tableHole, .tableHoleList{
+	width: 100%;
+}
+
+.listed{
+	width: 30%;
+	font-family: sans-serif;
+	font-size: 15px;
+	border: 1px solid black;
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 5px 30px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.listed a{
+    text-decoration: none;
+    color: black;
+}
+
+.listed a:hover{
+	text-decoration: underline;
+	color: #002b80;
+}
